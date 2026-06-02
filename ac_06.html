@@ -1,0 +1,347 @@
+
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+<head> 
+   <meta http-equiv="content-type" content="text/html; charset="UTF-8"">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> Примерный расчет аккумуляторной батареи для автономных систем электроснабжения</title>
+   <meta name="title" content=" Примерный расчет аккумуляторной батареи для автономных систем электроснабжения ">
+   <meta name="author" content="Валентин Приходько">
+   <meta name="keywords"        content="  Примерный расчет аккумуляторной батареи для автономных систем электроснабжения  "> 
+   <meta http-equiv="keywords" content="  Примерный расчет аккумуляторной батареи для автономных систем электроснабжения ">
+   <meta name="robots" content="index,follow">
+   <meta name="description"    content="  Примерный расчет аккумуляторной батареи для автономных систем электроснабжения ">
+   <meta name="copyright" content=" copyright © 2011 - 2025 г.  , all rights reserved.">
+   <meta name="document-state" content="dynamic">
+   <meta name="revisit-after" content="1 days">
+   <meta name="classification" content="  Примерный расчет аккумуляторной батареи для автономных систем электроснабжения ">
+   <meta name="category" content="  Примерный расчет аккумуляторной батареи для автономных систем электроснабжения  ">
+   <meta http-equiv="language" content="russian">
+   <meta name="rating" content="general">
+   <meta name="distribution" content="global">
+   <meta name="resourse-type" content="document">
+<!>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<!-- -->
+
+</head>
+<!> 
+
+<body>
+<div class="banner-w3layouts" id="home">
+        <!-- Шапка страницы Начало -->
+        <div class="header"> <br>   
+                <!-- Текущая дата -->
+                <div align = right style="font-size:15px;  color:#ffffff;"> 
+                        <Script language="JavaScript">
+                                    var now = new Date();
+                                    var days = new Array(' Воскресенье ',' Понедельник ',' Вторник ',' Среда ',' Четверг ',' Пятница ',' Суббота ');
+                                    var months = new Array(' Января ',' Февраля ',' Марта ',' Апреля ',' Мая ',' Июня ',' Июля ',' Августа ',' Сентябрь',' Октября  ',' Ноября ',' Декабря ');
+                                    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                                    function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                                    today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " года";
+                                    document.write("<span class=\"style2\">"+"Сегодня "+today+ "."+"</span>");
+                        </Script>
+                </div>  
+                <!> 
+                <nav class="navbar navbar-default">
+			  <!-- Горизонтальное меню в шапке страницы  начало -->
+			 <div class="navbar-header">
+				 <div>
+                                           <a  href="index.html"     style="font-size:22px; color: #ffffff;" target = _self > Домашний Интернет - Справочник</a><br>
+                                           <a  href="index.html"    style="font-size:22px; color: #ffffff;" target = _self > Все об альтернативной энергетике и энергосбережению  </a><br>
+                                 </div> 
+			  </div> 
+			  <!-- Горизонтальное меню в шапке страницы  конец -->
+                </nav>
+	 
+        </div><hr>
+        <!-- Шапка страницы Окончание -->
+        <div align = center  ><h1 style="font-size:18px;  color: #000000;"> Примерный расчет аккумуляторной батареи для автономных систем электроснабжения </h1></div>
+<!>
+<!-- -->
+<div  align = center style="font-size:15px;  color:#000000;">
+        <!Links> 
+</div> 
+<!-- -->     
+  
+<!>
+        <!-- Основное содержимое страницы Начало -->
+        <div class="w3l_banner_info">
+                 <div align = justify   style=" background-color: #dcdcdc; font-size:15px;  color: #000000; margin: 10px 10px 10px 10px;  "><div align = justify style="margin: 20px 20px 20px 20px;  "><br>
+                        <img src="images/el_akk.jpg"   width= 160 height=120  align=left    alt=" Примерный расчет аккумуляторной батареи для автономных систем электроснабжения  " border = 1 style="margin: 10px 10px 10px 10px;">
+<!>
+                    <p>
+<p>При расчете системы автономного электроснабжения очень важно правильно
+выбрать емкость аккумуляторной батареи (АКБ).</p>
+
+<p>Для предварительного расчета Вы можете руководствоваться следующими
+простыми правилами.</p>
+
+<p>емкость, которую должна выдавать АКБ, рассчитывается исходя из
+количества электроэнергии в Вт*ч, потребляемого от АКБ в режиме разряда.</p>
+
+<p>Допустим емкость 1 АКБ 100 АЧ, и вольтаж 12 В. Соответственно полная
+емкость составит 100 АЧ *12 В=1200 Вт*ч. Беда в том, что если разрядить такой
+АКБ на 100% он выйдет из строя. Поэтому нужно оставлять 30% емкости.
+Соответствено 100 АЧ * 12 В * 0.7=840 Вт*ч</p>
+
+<p>Если батарей несколько - то количество энергии в них складывается.</p>
+
+<p>в общем случае нужно руководствоваться следующими параметрами:
+допустимая глубина разряда не должна превышать 30-40% для герметичных
+необслуживаемых батарей, и не более 50% для стартерных батарей. При циклических
+режимах работы аккумулятора нужно применять гелевые аккумуляторы или
+специальные аккумуляторы с жидким электролитом. При буферном режиме работы
+(т.е. если основное время аккумуляторы находятся в заряженном состоянии и
+иногда, при пропадании электрической сети, отдают свою энергию) можно применять
+аккумуляторы AGM. Необходимо учитывать, что степень заряда аккумулятора не
+зависит жестко от его напряжения. При быстром разряде большими токами
+допускается более низкое конечное напряжение батарей (до 9,8В), а если
+аккумулятор разряжается малым током длительное время, то он может быть разряжен
+на 100% даже при напряжении на нем более 11,5В.</p>
+
+<p>емкость АБ понижается с понижением температуры Гелевые аккумуляторы
+меньше теряют емкость при понижении температуры, AGM и стартерные обычно имеют
+емкость в 2 раза ниже номинальной уже при 0&deg;C и при дальнейшем понижении температуры их
+полезная емкость резко падает.</p>
+
+<p>срок службы АБ понижается при увеличении температуры окружающей среды
+выше 25 &deg;C.</p>
+
+<p>Иногда, информация о том до какого напряжения проседает АКБ при разряде
+разными токами указывает производитель в пасспорте на аккумулятор.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Предположим, что нам нужно обеспечить работу прибора мощностью
+2000 Вт в течении 5 часов - т.е. его потребление будет 10000Вт*ч. и&nbsp; для этого&nbsp;
+мы хотим использовать&nbsp;
+аккумуляторы на рабочее напряжение 12В и емкостью 100 АЧ.&nbsp; </p>
+
+<p>Давайте рассчитаем&nbsp; сколько таких
+АКБ нам потребуется.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;Количество запасенной энергии у
+заряженного аккумулятора будет равно:</p>
+
+<p>&nbsp;</p>
+
+<p>P=RxV=100Ачx12В=1200 Вт.ч</p>
+
+<p>&nbsp;</p>
+
+<p>Такое количество энергии можно получить при полном разряде полностью
+заряженного аккумулятора. Но, аккумуляторы могут быть и не полностью
+заряженными. Кроме того, глубокий полный разряд после небольшого количества
+циклов заряд-разряд, быстро выведет аккумуляторы из строя. Например, обычный
+хороший аккумулятор при разряде на 30 % его емкости и последующей сразу после
+разряда зарядке способен выдержать 1000 таких циклов. Если при разряде отобрать
+70% емкости, то количество циклов уменьшится примерно до 200. Поэтому, при
+расчетах нужно вводить коэффициент, который учитывает глубину разряда. </p>
+
+<p>&nbsp;</p>
+
+<p>Извлекаемое количество энергии в АКБ равно </p>
+
+<p>&nbsp;</p>
+
+<p>P=RxVxk</p>
+
+<p>&nbsp;</p>
+
+<p>P=100Ачx12Вx0.7</p>
+
+<p>&nbsp;</p>
+
+<p>Соответственно, для определения емкости нужно количество потребляемой
+энергии разделить на напряжение аккумулятора умноженное на коэффициент емкости.</p>
+
+<p>&nbsp;</p>
+
+<p>Тогда формула определения необходимой емкости будет иметь такой вид:</p>
+
+<p>&nbsp;</p>
+
+<p>E=Q / (V x k)</p>
+
+<p>&nbsp;</p>
+
+<p>Где Е - необходимая общая емкость аккумуляторов в Ач;</p>
+
+<p>&nbsp;</p>
+
+<p>Q- количество энергии, которую нужно получить от аккумуляторов в Вт.ч;</p>
+
+<p>&nbsp;</p>
+
+<p>V-напряжение каждого из аккумуляторов;</p>
+
+<p>&nbsp;</p>
+
+<p>k-коэффициент использования емкости, учитывающий, какую часть энергии
+всех используемых аккумуляторов можно реально использовать потребителям.</p>
+
+<p>&nbsp;</p>
+
+<p>Разобравшись с теорией, можно определить необходимую емкость
+аккумуляторов по заданным параметрам.</p>
+
+<p>&nbsp;Для того чтобы определить, какую
+емкость можно отобрать от аккумуляторов, чтобы получить электрическую энергию в
+количестве 10000 Вт. ч, делим это количество энергии на рабочее напряжение
+каждого аккумулятора равное 12В. В результате получаем, что надо отобрать 833
+А.ч от имеющейся емкости аккумуляторов. Если применить коэффициент емкости
+равный 0, 7 , учитывающий то обстоятельство , что недопустимо часто полностью
+разряжать кислотные аккумуляторы, то получаем значение необходимой
+установленной емкости аккумуляторов равное 1190 Ач.</p>
+
+<p>&nbsp;</p>
+
+<p>E=10000Вт.ч/(12Вх07)=1190 Ач</p>
+
+<p>&nbsp;</p>
+
+<p>Поскольку мы в нашем примере хотели использовать АКБ 100 Ач, то в этом
+случае необходимо будет 12 АКБ&nbsp; такой
+емкости.</p>                   
+                   </p>
+
+<!>
+                 </div>
+<!-- Стрелка - в Начало Страницы -->
+<div align = center ><a  href="#"  target = _self ><img src="img_auto/arr_str_top.png"    align=center    alt=" В Начало страницы " title " В Начало страницы  "></a></div> 
+<!--   -->		
+<br></div>
+<!>
+<!-- -->
+<div  align = center style="font-size:15px;  color:#000000;">
+        <!Links_last> 
+</div>
+<!-- -->   
+
+
+<!>  
+                        <br>
+                 </div></div>
+        </div>
+        <!-- Основное содержимое страницы Окончание -->
+        <div class="clearfix"></div>
+</div>
+<!--- Подвал страницы начало --->
+        <hr>
+        <div align = center  style = "color: #000000; font-size: 14px; font-weight: normal;  text-decoration: none ; ">
+                  <div align = center ><strong> Примерный расчет аккумуляторной батареи для автономных систем электроснабжения </strong> </div>
+                  Все об альтернативной энергетике и энергосбережению 
+                 <Script language="JavaScript">
+                            var now = new Date();
+                            today =  fourdigits(now.getYear());
+                            document.write("<div>"+"Copyright © 2011 - "+today+ " год."+"</div>");
+                </script>
+	         E-mail:&nbsp;&nbsp;&nbsp; <a href ="mailto:_pvi@ukr.net" target=_blank  style=" font-size:14px; color:#000000; text-decoration: none; "> _pvi@ukr.net </a>
+       </div>
+       <div align = center style = "color: #000000; font-size: 14px; text-decoration: none; ">
+                                  Все материалы на сайте предоставлены ИСКЛЮЧИТЕЛЬНО в ОЗНАКОМИТЕЛЬНЫХ и ОБРАЗОВАТЕЛЬНЫХ целях,
+                                 <br>администрация сайта не претендует на их авторство и не несёт ответственности за их содержание. 
+        </div>
+<br><hr><br>
+
+<!--- Подвал страницы Конец --->
+<!--- Скрипты JavaScript --->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- jarallax-js -->
+			<script src="js/jarallax.js"></script>
+			<script src="js/SmoothScroll.min.js"></script>
+			<script type="text/javascript">
+				/* init Jarallax */
+				$('.jarallax').jarallax({
+					speed: 0.5,
+					imgWidth: 1366,
+					imgHeight: 768
+				})
+			</script>
+<!-- //jarallax-js -->
+					<!--banner Slider starts Here-->
+						<script src="js/responsiveslides.min.js"></script>
+							<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+
+							<!--banner Slider starts Here-->
+
+
+<!--light-box-files -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<!--//light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!>
+<!-- start-smoth-scrolling -->
+<!--//footer-section-->
+<!-- Starts-Number-Scroller-Animation-JavaScript -->		
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- //Starts-Number-Scroller-Animation-JavaScript -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!>
+</body>
+</html>

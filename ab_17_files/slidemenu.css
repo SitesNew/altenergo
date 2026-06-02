@@ -1,0 +1,132 @@
+.jqueryslidemenu{
+	width: 150px;
+	z-index: 500;
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+z-index: 500;
+
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float:left;
+padding: 5px 10px 5px 35px;
+	background-image: url("./i/bg_li_down.gif");
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	z-index: 500;
+    
+    font-size: 16px;
+	
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+width:150px;
+z-index: 500;
+
+ /*background of tabs (default state)*/
+}
+
+.jqueryslidemenu ul li.selected
+{
+	background-image: url("./i/bg_li_down.gif");
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	/*background-color: #f5f1cc;*/
+	
+}
+
+.jqueryslidemenu ul li.selected a span {border-bottom: 1px solid #ff8400; color: #ff8400;}
+
+.jqueryslidemenu ul li.active
+{
+	background-image: url("./i/bg_li_up.gif");
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	background-color: #f5f1cc;
+	
+}
+
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+height: 24px;
+}
+
+
+.jqueryslidemenu ul li a:hover{
+background: #f5f1cc; /*tab link background during hover state*/
+}
+
+
+
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+background-color: #f5f1cc;
+padding-bottom: 10px;
+padding-top: 10px;
+padding-left: 10px;
+border-bottom: 1px solid #cacaca;
+border-right: 1px solid #cacaca;
+border-top: 1px solid #ffffff;
+margin-top: -1px;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+padding: 0px;
+border: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+font-size: 13px ;
+width: 180px; /*width of sub menus*/
+padding: 5px 10px;
+margin: 0;
+background-color: #f5f1cc;
+color: #006BA6;
+}
+.jqueryslidemenu ul li ul li a span.nav-left-decor{color: #006BA6; border-bottom: 1px dotted #006BA6;}
+.jqueryslidemenu ul li ul li a:hover span.nav-left-decor{color: #ff8400; border-bottom: 1px solid #ff8400;}
+.jqueryslidemenu ul li ul li.selected a{
+font-size: 13px ;
+width: 180px; /*width of sub menus*/
+padding: 5px 10px;
+margin: 0;
+background-color: #f5f1cc;
+color: #ff8400;
+
+}
+
+.jqueryslidemenu ul li ul li.selected a span{border-bottom: 1px solid #ff8400; color: #ff8400;}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,538 @@
+
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+<head> 
+   <meta http-equiv="content-type" content="text/html; charset="UTF-8"">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> О расчете мощности стабилизатора напряжения</title>
+   <meta name="title" content=" О расчете мощности стабилизатора напряжения ">
+   <meta name="author" content="Валентин Приходько">
+   <meta name="keywords"        content="  О расчете мощности стабилизатора напряжения  "> 
+   <meta http-equiv="keywords" content="  О расчете мощности стабилизатора напряжения ">
+   <meta name="robots" content="index,follow">
+   <meta name="description"    content="  О расчете мощности стабилизатора напряжения ">
+   <meta name="copyright" content=" copyright © 2011 - 2018 г.  , all rights reserved.">
+   <meta name="document-state" content="dynamic">
+   <meta name="revisit-after" content="1 days">
+   <meta name="classification" content="  О расчете мощности стабилизатора напряжения ">
+   <meta name="category" content="  О расчете мощности стабилизатора напряжения  ">
+   <meta http-equiv="language" content="russian">
+   <meta name="rating" content="general">
+   <meta name="distribution" content="global">
+   <meta name="resourse-type" content="document">
+<!>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<!-- -->
+
+</head>
+<!> 
+
+<body>
+<div class="banner-w3layouts" id="home">
+        <!-- Шапка страницы Начало -->
+        <div class="header"> <br>   
+                <!-- Текущая дата -->
+                <div align = right style="font-size:15px;  color:#ffffff;"> 
+                        <Script language="JavaScript">
+                                    var now = new Date();
+                                    var days = new Array(' Воскресенье ',' Понедельник ',' Вторник ',' Среда ',' Четверг ',' Пятница ',' Суббота ');
+                                    var months = new Array(' Января ',' Февраля ',' Марта ',' Апреля ',' Мая ',' Июня ',' Июля ',' Августа ',' Сентябрь',' Октября  ',' Ноября ',' Декабря ');
+                                    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                                    function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                                    today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " года";
+                                    document.write("<span class=\"style2\">"+"Сегодня "+today+ "."+"</span>");
+                        </Script>
+                </div>  
+                <!> 
+                <nav class="navbar navbar-default">
+			  <!-- Горизонтальное меню в шапке страницы  начало -->
+			 <div class="navbar-header">
+				 <div>
+                                           <a  href="index.html"     style="font-size:22px; color: #ffffff;" target = _self > Домашний Интернет - Справочник</a><br>
+                                           <a  href="index.html"    style="font-size:22px; color: #ffffff;" target = _self > Все об альтернативной энергетике и энергосбережению  </a><br>
+                                 </div> 
+			  </div> 
+			  <!-- Горизонтальное меню в шапке страницы  конец -->
+                </nav>
+	 
+        </div><hr>
+        <!-- Шапка страницы Окончание -->
+        <div align = center  ><h1 style="font-size:18px;  color: #000000;"> О расчете мощности стабилизатора напряжения </h1></div>
+<!>
+<!-- -->
+<div  align = center style="font-size:15px;  color:#000000;">
+        <!Links> 
+</div> 
+<!-- -->     
+  
+<!>
+        <!-- Основное содержимое страницы Начало -->
+        <div class="w3l_banner_info">
+                 <div align = justify   style=" background-color: #dcdcdc; font-size:15px;  color: #000000; margin: 10px 10px 10px 10px;  "><div align = justify style="margin: 20px 20px 20px 20px;  "><br>
+                        <img src="images/el_est.jpg"   width= 160 height= 90  align=left    alt=" О расчете мощности стабилизатора напряжения  " border = 1 style="margin: 0px 10px 10px 10px;">
+<!>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="157">
+<p style="text-align: center;"><strong>Бытовые электроприборы</strong></p>
+</td>
+<td width="163">
+<p style="text-align: center;"><strong>Мощность, Вт</strong></p>
+</td>
+<td width="168">
+<p style="text-align: center;"><strong>Электроинструмент</strong></p>
+</td>
+<td width="156">
+<p style="text-align: center;"><strong>Мощность, Вт</strong></p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>фен</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>450-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>дрель</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>400-800</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>утюг</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>500-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>перфоратор</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>600-1400</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>электроплита</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1100-6000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>электроточило</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>300-1100</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>тостер</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>600-1500</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>дисковая пила</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>750-1600</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>кофеварка</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>800-1500</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>электрорубанок</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>400-1000</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>обогреватель</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1000-2400</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>электролобзик</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>250-700</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>гриль</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1200-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>шлифовальная машина</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>650-2200</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>пылесос</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>400-2000</p>
+</td>
+<td colspan="2" width="324">
+<p style="text-align: center;"><strong>Электроприборы</strong></p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>радио</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>50-250</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>компрессор</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>750-2800</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>телевизор</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>100-400</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>водяной насос</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>500-900</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>холодильник</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>150-600</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>циркулярная пила</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>1800-2100</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>духовка</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1000-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>кондиционер</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>1000-3000</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>СВЧ-печь</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1500-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>электромоторы</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>550-3000</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>компьютер</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>400-750</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>вентиляторы</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>750-1700</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>электрочайник</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1000-2000</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>насос высокого давления</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>2000-2900</p>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="157">
+<p>электролампы</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>20-250</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>сварочный агрегат</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>1500-3000</p>
+</td>
+</tr>
+<tr style="background-color: #e8e8e8;">
+<td style="text-align: center;" width="157">
+<p>бойлер</p>
+</td>
+<td style="text-align: center;" width="163">
+<p>1200-1500</p>
+</td>
+<td style="text-align: center;" width="168">
+<p>сенокосилка</p>
+</td>
+<td style="text-align: center;" width="156">
+<p>750-2500</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Примечания:</p>
+<ul>
+<li style="text-align: justify;">электромоторам в момент запуска требуется более высокая мощность, затем во время работы их мощность равна номинальной.</li>
+<li style="text-align: justify;">мощность стабилизатора при использовании асинхронных электродвигателей, компрессоров, насосов должна превышать в 3-4 раза мощность потребителей.</li>
+</ul>
+<p style="text-align: justify;"><em>Пример расчета мощности стабилизатора</em>:</p>
+<p style="text-align: justify;">Допустим, что&nbsp; в стационарном режиме работают:&nbsp; телевизор (400 Вт), холодильник (600 Вт), кондиционер (1000 Вт), радио (100 Вт), электрические лампы (200 Вт). Подсчитаем суммарную мощность: 400+600+1000+100+200 = 2300 (Вт). Одновременно со стационарными электроприборами могут работать&nbsp; электрочайник (1000 Вт), утюг (1000 Вт), пылесос (800 Вт). Тогда общая нагрузка возрастает на 800-2800 Вт. Итоговая максимальная суммарная мощность равна 2300+2800 = 5100 (Вт). Умножаем полученную сумму на <em>коэффициент, учитывающий изменение напряжения в сети</em>.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Значение коэффициента приведены в таблице.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="background-color: #efefef;">
+<td>
+<p style="text-align: center;"><strong>Напряжение &nbsp; &nbsp;</strong></p>
+</td>
+<td width="35">
+<p>130</p>
+</td>
+<td width="69">
+<p>150</p>
+</td>
+<td width="69">
+<p>170</p>
+</td>
+<td width="74">
+<p>210</p>
+</td>
+<td width="66">
+<p>220</p>
+</td>
+<td width="69">
+<p>230</p>
+</td>
+<td width="54">
+<p>250</p>
+</td>
+<td width="55">
+<p>270</p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="text-align: center;"><strong>Коэффициент &nbsp;&nbsp;</strong></p>
+</td>
+<td width="35">
+<p>1,77</p>
+</td>
+<td width="69">
+<p>1,55</p>
+</td>
+<td width="69">
+<p>1,35</p>
+</td>
+<td width="74">
+<p>1,10</p>
+</td>
+<td width="66">
+<p>1,05</p>
+</td>
+<td width="69">
+<p>1,10</p>
+</td>
+<td width="54">
+<p>1,35</p>
+</td>
+<td width="55">
+<p>1,55</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Допустим, что напряжение в сети равно 170 В, значит&nbsp; значение коэффициента при этом напряжении равно 1,35.</p>
+<p style="text-align: justify;">В результате получаем:&nbsp; 5100х1,35 = 6885 (Вт). Таким образом, Вам требуется&nbsp; стабилизатор мощностью не менее 7 кВт.</p>
+<p style="text-align: justify;">&nbsp;Важное замечание: <a href="http://power-group.kiev.ua/stabilizatory-naprjazhenija.html">стабилизаторы напряжения</a> не защищают от &nbsp;полного пропадания напряжения в электросети.</p>
+
+<!>
+                 </div>
+<!-- Стрелка - в Начало Страницы -->
+<div align = center ><a  href="#"  target = _self ><img src="img_auto/arr_str_top.png"    align=center    alt=" В Начало страницы " title " В Начало страницы  "></a></div> 
+<!--   -->		
+<br></div>
+<!>
+<!-- -->
+<div  align = center style="font-size:15px;  color:#000000;">
+        <!Links_last> 
+</div>
+<!-- -->   
+
+
+<!>  
+                        <br>
+                 </div></div>
+        </div>
+        <!-- Основное содержимое страницы Окончание -->
+        <div class="clearfix"></div>
+</div>
+<!--- Подвал страницы начало --->
+        <hr>
+        <div align = center  style = "color: #000000; font-size: 14px; font-weight: normal;  text-decoration: none ; ">
+                  <div align = center ><strong> О расчете мощности стабилизатора напряжения </strong> </div>
+                  Все об альтернативной энергетике и энергосбережению 
+                 <Script language="JavaScript">
+                            var now = new Date();
+                            today =  fourdigits(now.getYear());
+                            document.write("<div>"+"Copyright © 2011 - "+today+ " год."+"</div>");
+                </script>
+	         E-mail:&nbsp;&nbsp;&nbsp; <a href ="mailto:_pvi@ukr.net" target=_blank  style=" font-size:14px; color:#000000; text-decoration: none; "> _pvi@ukr.net </a>
+       </div>
+       <div align = center style = "color: #000000; font-size: 14px; text-decoration: none; ">
+                                  Все материалы на сайте предоставлены ИСКЛЮЧИТЕЛЬНО в ОЗНАКОМИТЕЛЬНЫХ и ОБРАЗОВАТЕЛЬНЫХ целях,
+                                 <br>администрация сайта не претендует на их авторство и не несёт ответственности за их содержание. 
+        </div>
+<br><hr><br>
+
+<!--- Подвал страницы Конец --->
+<!--- Скрипты JavaScript --->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- jarallax-js -->
+			<script src="js/jarallax.js"></script>
+			<script src="js/SmoothScroll.min.js"></script>
+			<script type="text/javascript">
+				/* init Jarallax */
+				$('.jarallax').jarallax({
+					speed: 0.5,
+					imgWidth: 1366,
+					imgHeight: 768
+				})
+			</script>
+<!-- //jarallax-js -->
+					<!--banner Slider starts Here-->
+						<script src="js/responsiveslides.min.js"></script>
+							<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+
+							<!--banner Slider starts Here-->
+
+
+<!--light-box-files -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<!--//light-box-files -->
+		<script type="text/javascript">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!>
+<!-- start-smoth-scrolling -->
+<!--//footer-section-->
+<!-- Starts-Number-Scroller-Animation-JavaScript -->		
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- //Starts-Number-Scroller-Animation-JavaScript -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!>
+</body>
+</html>
